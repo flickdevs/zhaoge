@@ -24,12 +24,17 @@
 
 			<div id="site-generator">
 				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+				<a href="<?php echo esc_url( __( 'http://www.jingwuyuan.net', 'zhaoge' ) ); ?>" title="<?php esc_attr_e( '技术支持', 'zhaoge' ); ?>"><?php printf( __( 'Proudly powered by %s', 'zhaoge' ), 'lampkid' ); ?></a>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js" type="text/javascript"></script>
+
+<?php require_once "qqservice.php" ?>
+
 
 </body>
 </html>

@@ -48,7 +48,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
 <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
-<script src="http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<!--<script src="http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script> -->
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
