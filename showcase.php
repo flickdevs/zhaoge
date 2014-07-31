@@ -26,7 +26,7 @@ get_header(); ?>
 
                     .panel-box {
                         border:1px solid #428BCA;
-                        min-height:50px;
+                        
                         margin-bottom:20px;
                     }
                     
@@ -133,8 +133,42 @@ get_header(); ?>
 		              </div>  <!-- row -->
 			      <div class="row-fluid">
 			        <div class="span12"> 
-                                  <div class="panel-box"></div>
-                                </div>
+                                  <div>
+								    <div class="carousel slide" id="myCarousel">
+										<ol class="carousel-indicators">
+										  <li class="" data-slide-to="0" data-target="#myCarousel"></li>
+										  <li data-slide-to="1" data-target="#myCarousel" class=""></li>
+										  <li data-slide-to="2" data-target="#myCarousel" class="active"></li>
+										</ol>
+										<div class="carousel-inner">
+										  <div class="item">
+											<img alt="" src="<?php header_image();?>">
+											<div class="carousel-caption">
+											  <h4>First Thumbnail label</h4>
+											  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+											</div>
+										  </div>
+										  <div class="item">
+											<img alt="" src="<?php echo get_template_directory_uri();?>/images/headers/wheel.jpg">
+											<div class="carousel-caption">
+											  <h4>Second Thumbnail label</h4>
+											  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+											</div>
+										  </div>
+										  <div class="item active">
+											<img alt="" src="<?php echo get_template_directory_uri();?>/images/headers/shore.jpg">
+											<div class="carousel-caption">
+											  <h4>Third Thumbnail label</h4>
+											  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+											</div>
+										  </div>
+										</div>
+										<a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>
+										<a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
+									</div>
+								  </div>
+			        
+					</div>
                               </div>
 			    </div>  <!-- .container -->
 
