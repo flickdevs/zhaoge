@@ -48,13 +48,20 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
 <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
-<!--<script src="http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script> -->
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+<![endif]--> 
+
+<!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/bsie/css/bootstrap-ie6.min.css">
+
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/bsie/css/ie.css">
 <![endif]-->
+
+
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).

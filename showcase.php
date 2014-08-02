@@ -23,12 +23,15 @@ get_header(); ?>
                     div.row-fluid {
                         margin-top:30px;
                     }
+					
 
                     .panel-box {
                         border:1px solid #428BCA;
                         
                         margin-bottom:20px;
                     }
+					
+					
                     
                     .panel-box .panel-box-heading {
                         background:#428BCA;
@@ -68,31 +71,31 @@ get_header(); ?>
 			      <div class="row-fluid">
 			        <div class="span4">
                                  <div class="panel-box">
-                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>服务项目 <span class="heading-right">更多</span></div>
+                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title <span class="heading-right">更多</span></div>
                                   <ul> 
-                                    <li>新房开荒、家庭保洁</li>
-                                    <li>会员卡、钟点工、擦玻璃</li>
-                                    <li>木地板打蜡、石材抛光、保养除渗透、其他</li>
+                                    <li>item1</li>
+                                    <li>item2</li>
+                                    <li>item3</li>
                                   </ul>
                                  </div>
                                 </div>
 			        <div class="span4">
                                  <div class="panel-box">
-                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>服务项目<span class="heading-right">更多</span></div>
+                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title<span class="heading-right">更多</span></div>
                                   <ul> 
-                                    <li>新房开荒、家庭保洁</li>
-                                    <li>会员卡、钟点工、擦玻璃</li>
-                                    <li>木地板打蜡、石材抛光、保养除渗透、晶面护理</li>
+                                    <li>item1</li>
+                                    <li>item2</li>
+                                    <li>item3</li>
                                   </ul>
                                  </div>
                                 </div>
 			        <div class="span4">
                                  <div class="panel-box">
-                                  <div class="panel-box-heading"><span class="heading-icon" ></span> 服务项目 <span class="heading-right">更多</span></div>
+                                  <div class="panel-box-heading"><span class="heading-icon" ></span> Panel Title <span class="heading-right">更多</span></div>
                                   <ul> 
-                                    <li>新房开荒、家庭保洁</li>
-                                    <li>会员卡、钟点工、擦玻璃</li>
-                                    <li>木地板打蜡、石材抛光、保养除渗透、晶面护理</li>
+                                    <li>item1</li>
+                                    <li>item2</li>
+                                    <li>item3</li>
                                   </ul>
                                  </div>
                                 </div>
@@ -101,31 +104,31 @@ get_header(); ?>
 			      <div class="row-fluid">
 			        <div class="span4">
                                  <div class="panel-box">
-                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>服务项目 <span class="heading-right">更多</span></div>
+                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title <span class="heading-right">更多</span></div>
                                   <ul> 
-                                    <li>新房开荒、家庭保洁</li>
-                                    <li>会员卡、钟点工、擦玻璃</li>
-                                    <li>木地板打蜡、石材抛光、保养除渗透、晶面护理</li>
+                                    <li>item1</li>
+                                    <li>item2</li>
+                                    <li>item3</li>
                                   </ul>
                                  </div>
                                 </div>
 			        <div class="span4">
                                  <div class="panel-box">
-                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>服务项目<span class="heading-right">更多</span></div>
+                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title<span class="heading-right">更多</span></div>
                                   <ul> 
-                                    <li>新房开荒、家庭保洁</li>
-                                    <li>会员卡、钟点工、擦玻璃</li>
-                                    <li>木地板打蜡、石材抛光、保养除渗透、晶面护理</li>
+                                    <li>item1</li>
+                                    <li>item2</li>
+                                    <li>item3</li>
                                   </ul>
                                  </div>
                                 </div>
 			        <div class="span4">
                                  <div class="panel-box">
-                                  <div class="panel-box-heading"><span class="heading-icon" ></span> 服务项目 <span class="heading-right">更多</span></div>
+                                  <div class="panel-box-heading"><span class="heading-icon" ></span> Panel Title <span class="heading-right">更多</span></div>
                                   <ul> 
-                                    <li>新房开荒、家庭保洁</li>
-                                    <li>会员卡、钟点工、擦玻璃</li>
-                                    <li>木地板打蜡、石材抛光、保养除渗透、晶面护理</li>
+                                    <li>item1</li>
+                                    <li>item2</li>
+                                    <li>item3</li>
                                   </ul>
                                  </div>
                                 </div>
