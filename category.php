@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The template for displaying Category Archive pages.
  *
@@ -8,58 +8,98 @@
  */
 
 get_header(); ?>
+<style type="text/css" >
 
-		<section id="primary">
-			<div id="content" role="main">
+                   
+                    .panel-box {
+                        border:1px solid #428BCA;
+                        
+                        margin-bottom:20px;
+						height:98%;
+                    }
+					
+					
+                    
+                    .panel-box .panel-box-heading {
+                        background:#428BCA;
+                        width:100%;
+			font-weight:bold;
+                        color:#ffffff;
+						position:relative;
+                    }
+                    
+                    .panel-box .heading-icon {
+                        margin-left:10px;
+                        margin-right:5px; 
+                        background:url('');
+                    }
+                    
+                    .panel-box .heading-right {
+                        font-weight:normal;
+                        font-size:12px;
+                        position:absolute;
+                        right:5px;
+                        float:right;
+                    }
+                    
+                    .panel-box ul {
+                        list-style:disc;
+                        margin-left:30px;
+                    }
 
-			<?php if ( have_posts() ) : ?>
-
-				<header class="page-header">
-					<h1 class="page-title"><?php
-						printf( __( 'Category Archives: %s', 'twentyeleven' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-					?></h1>
-
-					<?php
-						$category_description = category_description();
-						if ( ! empty( $category_description ) )
-							echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
-					?>
-				</header>
-
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
-					?>
-
-				<?php endwhile; ?>
-
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
-
-			<?php else : ?>
-
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyeleven' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
-
-			<?php endif; ?>
-
-			</div><!-- #content -->
-		</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
+                    .panel-box ul li{
+                      border-bottom:1px dashed gray;
+                      padding-right:5px;
+                      margin-top:5px;
+                      color:#13152E;
+					  position:relative;
+                    }
+					
+					span.right {
+					    position:absolute;
+					    right:5px;
+					}
+                    
+		</style>
+		  <div class="container" >
+		      <div class="row">
+			      <div class="span4">
+						<div class="panel-box">
+							  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title <span class="heading-right">更多</span></div>
+							  <ul> 
+								<li>item1</li>
+								<li>item2</li>
+								<li>item3</li>
+							  </ul>
+						</div>
+						<div class="panel-box">
+							  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title <span class="heading-right">更多</span></div>
+							  <ul> 
+								<li>item1</li>
+								<li>item2</li>
+								<li>item3</li>
+							  </ul>
+						</div>
+				  </div>
+				  <div class="span8">
+				    <div class="panel-box">
+						  <div class="panel-box-heading"> <span class="heading-icon" ></span><?php printf( single_cat_title( '', false ) ); ?> <span class="heading-right"></span></div>
+						  <?php if ( have_posts() ) : ?>
+						  <ul> 
+						    <?php while ( have_posts() ): the_post(); ?>
+							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>  <span class="right"><?php the_date(); ?></span></li>
+							<?php endwhile; ?>
+						  </ul>
+						  <?php else: ?>
+						  <?php 
+						     printf('暂无内容'); 
+						     endif;
+						  ?>
+						  
+					</div>
+				</div>
+				
+			  </div>
+		  </div>
+		 
 <?php get_footer(); ?>
