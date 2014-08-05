@@ -38,6 +38,7 @@ get_header(); ?>
                         width:100%;
 			font-weight:bold;
                         color:#ffffff;
+						position:relative;
                     }
                     
                     .panel-box .heading-icon {
@@ -49,9 +50,8 @@ get_header(); ?>
                     .panel-box .heading-right {
                         font-weight:normal;
                         font-size:12px;
-                        position:relative;
-                        margin-right:5px;
-                        float:right;
+                        right:5px;
+						position:absolute;
                     }
                     
                     .panel-box ul {
