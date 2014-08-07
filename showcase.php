@@ -68,72 +68,42 @@ get_header(); ?>
                     
 		</style>
 			    <div class="container">
-			      <div class="row-fluid">
-			        <div class="span4">
+				<?php
+				    $categories = get_terms( 'category', array(
+ 	                                          'orderby'    => 'slug',
+ 	                                          'hide_empty' => 0
+                                             ) );
+					$category_index = 0;
+					foreach ($categories as $category):
+					  $category_index = $category_index + 1;
+					  if($category_index % 3 == 1):
+					    
+				?>
+			             <div class="row-fluid">
+					  <?php endif; ?>
+			                <div class="span4">
                                  <div class="panel-box">
-                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title <span class="heading-right">更多</span></div>
-                                  <ul> 
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                  </ul>
-                                 </div>
-                                </div>
-			        <div class="span4">
-                                 <div class="panel-box">
-                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title<span class="heading-right">更多</span></div>
-                                  <ul> 
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                  </ul>
-                                 </div>
-                                </div>
-			        <div class="span4">
-                                 <div class="panel-box">
-                                  <div class="panel-box-heading"><span class="heading-icon" ></span> Panel Title <span class="heading-right">更多</span></div>
-                                  <ul> 
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                  </ul>
-                                 </div>
-                                </div>
+                                    <div class="panel-box-heading"> <span class="heading-icon" ></span><?php echo $category->name; ?> <span class="heading-right"><a href="<?php echo get_term_link($category); ?>">更多</a></span></div>
+                                    <ul> 
+									    <?php 
+										    $posts = get_posts("category=".$category->term_id."&numberposts=5&orderby=date");
+                                            foreach ($posts as $post ):	setup_postdata($post);
+                                        ?>											
+                                              <li><a href="<?php the_permalink();?>" > <?php the_title(); ?></a></li>
+											  
+										
+										<?php 
+										    endforeach;
+                                            wp_reset_postdata();											
+										?>
+                                    </ul>
+                                 </div>  
+							</div>
+					<?php if ($category_index % 3 == 0): ?>
+					    </div>
+					<?php endif ?>
+				<?php endforeach; ?>
 
-		              </div>  <!-- row -->					                
-			      <div class="row-fluid">
-			        <div class="span4">
-                                 <div class="panel-box">
-                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title <span class="heading-right">更多</span></div>
-                                  <ul> 
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                  </ul>
-                                 </div>
-                                </div>
-			        <div class="span4">
-                                 <div class="panel-box">
-                                  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title<span class="heading-right">更多</span></div>
-                                  <ul> 
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                  </ul>
-                                 </div>
-                                </div>
-			        <div class="span4">
-                                 <div class="panel-box">
-                                  <div class="panel-box-heading"><span class="heading-icon" ></span> Panel Title <span class="heading-right">更多</span></div>
-                                  <ul> 
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                  </ul>
-                                 </div>
-                                </div>
-
-		              </div>  <!-- row -->
 			      <div class="row-fluid">
 			        <div class="span12"> 
                                   <div>
