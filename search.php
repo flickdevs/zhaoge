@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The template for displaying Search Results pages.
  *
@@ -39,11 +39,11 @@ get_header(); ?>
 
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
+						<h1 class="entry-title"><?php _e( '未找到相关内容', 'twentyeleven' ); ?></h1>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentyeleven' ); ?></p>
+						<p><?php _e( '您可在线咨询我们，拨打电话029-81889871 或者 029-81889872' ); ?></p>
 						<?php get_search_form(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
@@ -53,5 +53,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
