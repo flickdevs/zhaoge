@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The template for displaying the footer.
  *
@@ -24,7 +24,8 @@
 
 			<div id="site-generator">
 				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://www.jingwuyuan.net', 'zhaoge' ) ); ?>" title="<?php esc_attr_e( '����֧��', 'zhaoge' ); ?>"><?php printf( __( 'Proudly powered by %s', 'zhaoge' ), 'lampkid' ); ?></a>
+			    <div style="font-weight:bold;">Copyright &copy; 2014-&nbsp; 陕西正大家政 版权所有 | 陕ICP备xxx号</div>
+				<a href="<?php echo esc_url( __( 'http://www.jingwuyuan.net', 'zhaoge' ) ); ?>" title="<?php esc_attr_e( '技术支持', 'zhaoge' ); ?>"><?php printf( __( 'powered by %s', 'zhaoge' ), 'lampkid' ); ?></a>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
