@@ -29,6 +29,7 @@ get_header(); ?>
                         border:1px solid #428BCA;
                         
                         margin-bottom:20px;
+						height:300px;
                     }
 					
 					
