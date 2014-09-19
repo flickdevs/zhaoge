@@ -14,15 +14,20 @@ get_header(); ?>
                         border:1px solid #428BCA;
                         
                         margin-bottom:20px;
+						min-height:200px;
                     }
 					
 					
-                    
+                    .big-height {
+					    min-height:420px;
+					}
+					
                     .panel-box .panel-box-heading {
                         background:#428BCA;
                         width:100%;
-			font-weight:bold;
+			            font-weight:bold;
                         color:#ffffff;
+						position:relative;
                     }
                     
                     .panel-box .heading-icon {
@@ -34,9 +39,8 @@ get_header(); ?>
                     .panel-box .heading-right {
                         font-weight:normal;
                         font-size:12px;
-                        position:relative;
-                        margin-right:5px;
-                        float:right;
+                        position:absolute;
+                        right:5px;
                     }
                     
                     .panel-box ul {
@@ -92,7 +96,7 @@ get_header(); ?>
 					</div>
 				  </div>
 				  <div class="span8">
-				    <div class="panel-box">
+				    <div class="panel-box big-height">
 					    <?php if ( have_posts() ) : ?>
 						  <div class="panel-box-heading"> <span class="heading-icon" ></span><?php $category = get_the_category(); echo $category[0]->cat_name; ?> <span class="heading-right"></span></div>
 						 

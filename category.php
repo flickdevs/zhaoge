@@ -15,9 +15,12 @@ get_header(); ?>
                         border:1px solid #428BCA;
                         
                         margin-bottom:20px;
-						height:98%;
+						min-height:200px;
                     }
 					
+					.big-height {
+					    min-height:420px;
+					}
 					
                     
                     .panel-box .panel-box-heading {
@@ -65,11 +68,11 @@ get_header(); ?>
 		      <div class="row">
 			      <div class="span4">
 						<div class="panel-box">
-							  <div class="panel-box-heading"> <span class="heading-icon" ></span>Panel Title <span class="heading-right">更多</span></div>
+							  <div class="panel-box-heading"> <span class="heading-icon" ></span>高新区总公司 <span class="heading-right">更多</span></div>
 							  <ul> 
-								<li>item1</li>
-								<li>item2</li>
-								<li>item3</li>
+								<li style="margin-top:10px;"><b style="font-weight:bold;margin-right:5px;">电话:</b>029-81889871, 029-81889872</li>
+								<li style="margin-top:10px;"><b style="font-weight:bold;margin-right:5px;">手机:</b>15209184957</li>
+								<li style="margin-top:10px;"><b style="font-weight:bold;margin-right:5px;">地址:</b>西安市高新区高新四路丹凤国际B座1504室（玫瑰大楼向北200米路东）</li>
 							  </ul>
 						</div>
 						<div class="panel-box">
@@ -82,7 +85,7 @@ get_header(); ?>
 						</div>
 				  </div>
 				  <div class="span8">
-				    <div class="panel-box">
+				    <div class="panel-box big-height" >
 						  <div class="panel-box-heading"> <span class="heading-icon" ></span><?php printf( single_cat_title( '', false ) ); ?> <span class="heading-right"></span></div>
 						  <?php if ( have_posts() ) : ?>
 						  <ul> 
